@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buraq Perfumes</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Discover Buraq Perfumes - luxury fragrances crafted for elegance. Shop now for premium, long-lasting scents.">
+    <meta name="keywords" content="Buraq Perfumes, luxury fragrances, premium scents, long-lasting perfume">
+    <meta name="author" content="Buraq Perfumes">
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Buraq Perfumes">
+    <meta property="og:description" content="Discover Buraq Perfumes - luxury fragrances crafted for elegance.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600566752355-35792bedcfe3">
+    <meta property="og:url" content="https://www.buraqperfumes.com">
+
+    <!-- External Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<style>
+    /* Base Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    :root {
+        --primary-color: #1a1a1a;
+        --secondary-color: #b38b59;
+        --accent-color: #d4af37;
+        --text-light: #f5f5f5;
+        --text-dark: #333;
+    }
+
+    body {
+        background-color: var(--primary-color);
+        color: var(--text-light);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    h1,
+    h2 {
+        color: var(--accent-color);
+        font-weight: bold;
+    }
+
+    .features {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+        padding: 30px 0;
+    }
+
+    .feature-box {
+        max-width: 200px;
+    }
+
+    .feature-box i {
+        font-size: 30px;
+        color: #000;
+        margin-bottom: 10px;
+    }
+
+    .feature-box h3 {
+        font-size: 18px;
+        color: #222;
+        margin-bottom: 5px;
+    }
+
+    .feature-box p {
+        font-size: 14px;
+        color: #555;
+    }
+
+    h1,
+    h2 {
+        font-family: 'Times New Roman', Times, serif;
+        color: var(--primary-color);
+    }
+
+    p {
+        line-height: 1.8;
+    }
+
+    /* banner  */
+    .banner {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../static/uploads/PERFUME BANNER.png");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Medium Screens (Tablets) */
+    @media (max-width: 1024px) {
+        .banner {
+            height: 70vh;
+        }
+
+        .banner img {
+            height: 70vh;
+        }
+    }
+
+    /* Small Screens (Mobile Phones) */
+    @media (max-width: 768px) {
+        .banner {
+            height: 50vh;
+        }
+
+        .banner img {
+            height: 50vh;
+        }
+
+        .hero-content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 1.5rem;
+        }
+
+        .hero-content p {
+            font-size: 1rem;
+        }
+
+        .cta-btn {
+            padding: 10px 20px;
+            font-size: 1rem;
+        }
+    }
+
+    /* .banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+} */
+
+    /* Header */
+    .header {
+        background-color: var(--primary-color);
+        padding: 1rem 5%;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        color: var(--text-light);
+        font-size: 2rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .nav-links {
+        justify-content: flex-start;
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .nav-links a {
+        color: var(--text-light);
+        text-decoration: none;
+        font-size: 18px;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        color: var(--accent-color);
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 100vh;
+        background: linear-gradient(rgba(43, 88, 12, 0.3), rgba(43, 88, 12, 0.3)),
+            url('https://images.unsplash.com/photo-1600566752355-35792bedcfe3') center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: var(--text-light);
+        padding-top: 80px;
+    }
+
+    .hero-content h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .cta-btn {
+        background-color: var(--accent-color);
+        color: var(--text-light);
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 30px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .cta-btn:hover {
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+        transform: scale(1.05);
+    }
+
+    /* Sections */
+    .section {
+        padding: 5rem 5%;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    /* About Section Styles */
+    #about {
+        background-color: white;
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .about-text h3 {
+        font-size: 1.75rem;
+        color: var(--primary-color);
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    .about-text p,
+    .about-text ul li {
+        font-size: 1rem;
+        color: var(--text-dark);
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+
+    .about-text ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .about-text ul li::before {
+        content: "•";
+        color: var(--secondary-color);
+        font-size: 1.5rem;
+        position: absolute;
+        left: 0;
+        top: -5px;
+    }
+
+    .about-text ul li strong {
+        color: var(--primary-color);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+
+        /* Contact Form */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            background-color: black;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background-color: #444;
+        }
+
+        /* Footer Links Color Fix */
+        .footer-links a {
+            color: white !important;
+            /* White color for links */
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: #ddd;
+            /* Light gray on hover */
+        }
+
+    }
+
+    /* Shop Section Styles */
+    #shop {
+        background-color: #f9f9f9;
+        padding: 60px 0;
+    }
+
+    .product-card {
+        border: none;
+        border-radius: 15px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: white;
+    }
+
+    .product-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-card img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .product-card .card-body {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .product-card .card-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--primary-color);
+        margin-bottom: 10px;
+    }
+
+    .product-card .card-text {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 15px;
+    }
+
+    .product-card .price {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: var(--secondary-color);
+        margin-bottom: 15px;
+    }
+
+    .product-card .btn-primary {
+        background-color: var(--accent-color);
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .product-card .btn-primary:hover {
+        background-color: #b38b59;
+    }
+
+    .cart-icon {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        cursor: pointer;
+        color: var(--text-light);
+        background-color: var(--accent-color);
+        padding: 10px;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .cart-count {
+        background: red;
+        color: white;
+        border-radius: 50%;
+        padding: 2px 6px;
+        font-size: 12px;
+        position: absolute;
+        top: -5px;
+        right: -5px;
+    }
+
+    /* Amenities Section */
+    .features-grid {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 50px 0;
+        flex-wrap: wrap;
+    }
+
+    .feature-card {
+        background: #0b1f3d;
+        /* Deep Royal Blue */
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(192, 192, 192, 0.3);
+        /* Silver Glow */
+        text-align: center;
+        width: 250px;
+        transition: 0.3s ease-in-out;
+        border: 2px solid rgba(192, 192, 192, 0.5);
+    }
+
+    .feature-card:hover {
+        transform: scale(1.05);
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(192, 192, 192, 0.5);
+    }
+
+    .feature-card i {
+        font-size: 30px;
+        color: #d1d1d1;
+        /* Soft Silver */
+        margin-bottom: 10px;
+    }
+
+    .feature-card h3 {
+        color: #f1f1f1;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .feature-card p {
+        font-size: 14px;
+    }
+
+
+
+    /* Gallery Section */
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+        transform: scale(1.1);
+    }
+
+    :root {
+        --accent-color: black;
+        /* Change this color to match your theme */
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #f9f9f9;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .testimonial-container {
+        width: 90%;
+        max-width: 600px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .testimonial-card {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        display: none;
+    }
+
+    .testimonial-card.active {
+        display: block;
+    }
+
+    .testimonial-card p {
+        font-size: 1rem;
+        color: #333;
+        margin-bottom: 1rem;
+    }
+
+    .testimonial-card span {
+        color: var(--accent-color);
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .stars {
+        color: #FFD700;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .btn-container {
+        margin-top: 15px;
+    }
+
+    .btn {
+        cursor: pointer;
+        padding: 8px 15px;
+        margin: 5px;
+        border: none;
+        background: var(--accent-color);
+        color: white;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .btn:hover {
+        background: #d94d2c;
+    }
+
+    /* Footer */
+    footer {
+        background-color: var(--primary-color);
+        color: var(--text-light);
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+
+    .footer-section h3 {
+        margin-bottom: 1rem;
+        color: white;
+        /* color: var(--accent-color); */
+    }
+
+    .footer-section a {
+        /* color: var(--text-light); */
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-section a:hover {
+        /* color: var(--accent-color); */
+        color: white;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 15px;
+    }
+
+    .social-icons a {
+        color: var(--text-light);
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+        color: var(--accent-color);
+    }
+
+    .h3 {
+        color: black;
+        background-color: white;
+    }
+
+    /* Cart Popup Styles */
+    .cart-popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cart-content {
+        background-color: white;
+        color: black;
+        padding: 20px;
+        border-radius: 10px;
+        width: 90%;
+        max-width: 500px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        position: relative;
+    }
+
+    .close-cart {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 24px;
+        cursor: pointer;
+        color: var(--primary-color);
+    }
+
+    .close-cart:hover {
+        color: var(--accent-color);
+    }
+
+    .cart-items {
+        max-height: 300px;
+        overflow-y: auto;
+        margin-bottom: 20px;
+    }
+
+    .checkout-btn {
+        background-color: var(--accent-color);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+        transition: background-color 0.3s ease;
+    }
+
+    .checkout-btn:hover {
+        background-color: #b38b59;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .hero-content h1 {
+            font-size: 2.5rem;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+        }
+
+        .about-content {
+            flex-direction: column;
+        }
+
+        .features-grid {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    /* Custom Modal Styles */
+    #welcomeModal .modal-content {
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        /* Gradient background */
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    #welcomeModal .modal-header {
+        border-bottom: none;
+        padding: 20px;
+    }
+
+    #welcomeModal .modal-title {
+        font-size: 26px;
+        font-weight: bold;
+        color: black;
+        /* White text */
+    }
+
+    #welcomeModal .modal-body {
+        padding: 20px;
+        font-size: 20px;
+        color: black;
+        /* White text */
+    }
+
+    #welcomeModal .modal-footer {
+        border-top: none;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    #welcomeModal .btn-primary {
+        background-color: #6a11cb;
+        /* Purple button */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    #welcomeModal .btn-primary:hover {
+        background-color: #4a00a0;
+        /* Darker purple on hover */
+    }
+
+    button {
+        background-color: var(--accent-color);
+        color: var(--primary-color);
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background-color: #b38b59;
+        /* Darker Gold */
+        transform: scale(1.05);
+    }
+
+    a {
+        color: var(--secondary-color);
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        color: var(--accent-color);
+    }
+</style>
+
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">Buraq Perfumes</div>
+            <img src="{{ url_for('static', filename='uploads/burraq.jpg') }}" alt="Buraq Perfumes Logo"
+                style="height: 50px; margin-right: 10px;">
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#our products">Shop</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="cart-icon" onclick="toggleCart()">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+
+    </header>
+    <!-- Cart Popup -->
+    <div id="cartPopup" class="cart-popup">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="total">Total: Rs. <span>0.00</span></div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+
+    <!-- Shopping Cart -->
+    <div class="cart">
+        <h3>Your Ca<i class="fas fa-shopping-cart"></i></h3>
+        <div class="cart-items">
+            <!-- Cart Items will be added here dynamically -->
+        </div>
+        <div class="total">Total: $0.00</div>
+    </div>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="banner"></div>
+        <!-- <div class="hero-content">
+            <h1>Discover the Art of Fragrance</h1>
+            <p>Indulge in luxury scents that define your presence</p>
+            <button class="cta-btn">Shop Now</button>
+        </div> -->
+    </section>
+
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Buraq Perfumes</h2>
+            <div class="row align-items-center">
+                <!-- About Image -->
+                <div class="col-md-6">
+                    <div class="about-image">
+                        <img src="{{ url_for('static', filename='uploads/about me.webp') }}"
+                            alt="About Buraq Perfumes" class="img-fluid rounded">
+                    </div>
+                </div>
+                <!-- About Text -->
+                <div class="col-md-6">
+                    <div class="about-text">
+                        <h3>Our Story</h3>
+                        <p>Buraq Perfumes was founded in 2010 with a vision to create luxurious, long-lasting fragrances
+                            that inspire confidence and elegance. Our journey began in the heart of Lahore, Pakistan,
+                            where we combined traditional craftsmanship with modern techniques to produce scents that
+                            captivate the senses.</p>
+                        <h3>Our Mission</h3>
+                        <p>At Buraq Perfumes, our mission is to provide our customers with premium fragrances that
+                            reflect their unique personality and style. We believe that a great perfume is more than
+                            just a scent—it's an expression of who you are.</p>
+                        <h3>Why Choose Us?</h3>
+                        <ul>
+                            <li><strong>Premium Ingredients:</strong> We use only the finest ingredients sourced from
+                                around the world.</li>
+                            <li><strong>Elegant Packaging:</strong> Our perfumes come in beautifully designed bottles
+                                that make them perfect for gifting.</li>
+                            <li><strong>Long-Lasting Fragrance:</strong> Our scents are crafted to last all day, leaving
+                                a lasting impression.</li>
+                            <li><strong>Customer Satisfaction:</strong> We are committed to providing exceptional
+                                customer service and quality products.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="section" id="shop">
+        <h2 class="section-title">Our Products</h2>
+        <div class="container">
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="{{ url_for('static', filename='uploads/perfum1.jpeg') }}" class="card-img-top"
+                            alt="Luxury Perfume 1" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Midnight Oud</h5>
+                            <p class="card-text">A rich blend of oud and spices, perfect for evening wear.</p>
+                            <p class="price">Rs. 2500</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="{{ url_for('static', filename='uploads/perfum2.jpeg') }}" class="card-img-top"
+                            alt="Luxury Perfume 2" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Sugar Baby</h5>
+                            <p class="card-text">A floral fragrance with hints of rose and amber.</p>
+                            <p class="price">Rs. 2000</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="{{ url_for('static', filename='uploads/perfum3.jpeg') }}" class="card-img-top"
+                            alt="Luxury Perfume 3" loading="lazy">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Ocean Breeze</h5>
+                            <p class="card-text">A fresh and aquatic scent inspired by the sea.</p>
+                            <p class="price">Rs. 1800</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="{{ url_for('static', filename='uploads/perfum4.jpeg') }}" class="card-img-top"
+                            alt="Luxury Perfume 4" loading="lazy">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Vanilla Dream</h5>
+                            <p class="card-text">A sweet and warm fragrance with vanilla and caramel notes.</p>
+                            <p class="price">Rs. 2200</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="{{ url_for('static', filename='uploads/perfum5.jpeg') }}" class="card-img-top"
+                            alt="Luxury Perfume 5" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Sandalwood Mystique</h5>
+                            <p class="card-text">A woody and earthy fragrance with sandalwood and musk.</p>
+                            <p class="price">Rs. 2800</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="https://images.unsplash.com/photo-1594032194509-0056023973b2" class="card-img-top"
+                            alt="Luxury Perfume 6" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Citrus Burst</h5>
+                            <p class="card-text">A zesty and refreshing fragrance with citrus and bergamot.</p>
+                            <p class="price">Rs. 1900</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="section" id="amenities">
+        <h2 class="section-title">Facilities</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-wind"></i>
+                <h3>Long-Lasting Fragrance</h3>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-flask"></i>
+                <h3>Premium Ingredients</h3>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-gift"></i>
+                <h3>Luxury Packaging</h3>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-star"></i>
+                <h3>Exclusive Scents</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section" id="gallery">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfe3" alt="Gallery 1">
+            </div>
+            <!-- Add more gallery items -->
+        </div>
+    </section>
+    <!-- Cart Popup -->
+    <div id="cartPopup" class="cart-popup">
+        <div class="cart-content">
+            <span class="close-cart " onclick="closeCart()">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="section" id="testimonials">
+        <h2 style="color: var(--accent-color);">💎 Customer Reviews 💎</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-card active">
+                <p>“Absolutely amazing fragrance! The scent lasts all day, and I have received so many compliments.
+                    Highly recommended!”</p>
+                <div class="stars">★★★★★</div>
+                <span>- Ahsan Malik (Karachi, Pakistan)</span>
+            </div>
+            <div class="testimonial-card">
+                <p>“Buraq Perfumes never disappoints! The quality is top-notch, and the packaging is elegant. Will
+                    definitely order again!”</p>
+                <div class="stars">★★★★★</div>
+                <span>- Sarah Khan (Lahore, Pakistan)</span>
+            </div>
+
+            <div class="testimonial-card">
+                <p>“Great value for money! The scent is long-lasting, and the bottle looks premium. Would love to see
+                    more variety.”</p>
+                <div class="stars">★★★★☆</div>
+                <span>- Imran Javed (Islamabad, Pakistan)</span>
+            </div>
+
+            <div class="testimonial-card">
+                <p>“I was skeptical at first, but this perfume exceeded my expectations! Smells just like high-end
+                    brands but at an affordable price.”</p>
+                <div class="stars">★★★★★</div>
+                <span>- Anum Sheikh (Faisalabad, Pakistan)</span>
+            </div>
+
+            <div class="testimonial-card">
+                <p>“The delivery was fast, and the fragrance is just perfect for daily wear. I will definitely recommend
+                    it to my friends!”</p>
+                <div class="stars">★★★★☆</div>
+                <span>- Zain Raza (Rawalpindi, Pakistan)</span>
+            </div>
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevReview()">Previous</button>
+            <button class="btn" onclick="nextReview()">Next</button>
+        </div>
+    </section>
+
+    <div class="features">
+        <div class="feature-box">
+            <i class="fas fa-shipping-fast"></i>
+            <h3><strong>Free Shipping</strong></h3>
+            <p>We offer free shipping all over Pakistan</p>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-exchange-alt"></i>
+            <h3><strong>14 Days Easy Return</strong>></h3>
+            <p>We give you 14 days to return the product</p>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-tags"></i>
+            <h3><strong>Money Back Guarantee</strong></h3>
+            <p>We return your money within 15 days</p>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-thumbs-up"></i>
+            <h3><strong>Promising Quality</strong></h3>
+            <p>All our products assure the utmost quality</p>
+        </div>
+    </div>
+    <section class="section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <form action="#" method="post" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <footer>
+                    <div class="footer-content">
+                        <div class="footer-section">
+                            <h3>Follow Us</h3>
+                            <div class="social-icons">
+                                <a href="https://facebook.com/buraqperfumes" target="_blank" aria-label="Facebook"><i
+                                        class="fab fa-facebook"></i></a>
+                                <a href="https://instagram.com/buraqperfumes" target="_blank" aria-label="Instagram"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="https://twitter.com/buraqperfumes" target="_blank" aria-label="Twitter"><i
+                                        class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3><strong>Get in Touch</strong></h3>
+                    <p><i class="fas fa-map-marker-alt"></i>Raiwand, Lahore, Pakistan</p>
+                    <p><i class="fas fa-phone"></i> +92 3328834666</p>
+                    <p><i class="fas fa-envelope"></i> info@buraqperfumes.com</p>
+            </div>
+            <div class="footer-section">
+                <h3><strong>Links</strong></h3>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#our products">Shop</a>
+                <a href="#contact">Conatct Us</a>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <a href="{{ url_for('privacy_policy') }}">Privacy Policy</a>
+                    <a href="{{ url_for('terms_of_service') }}">Terms of Service</a>
+                    <a href="{{ url_for('refund_policy') }}">Refund Policy</a>
+
+                </div>
+            </div>
+        </footer>
+    </footer>
+    <!-- Welcome Pop-up Modal -->
+    <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="welcomeModalLabel">Welcome to Buraq Perfumes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Thank you for visiting Buraq Perfumes! Explore our exclusive collection of luxury fragrances.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary"
+                        data-bs-dismiss="modal"><strong>Close</strong></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script>
+        let reviews = document.querySelectorAll(".testimonial-card");
+        let currentIndex = 0;
+
+        function showReview(index) {
+            reviews.forEach((review, i) => {
+                review.classList.remove("active");
+                if (i === index) {
+                    review.classList.add("active");
+                }
+            });
+        }
+
+        function nextReview() {
+            currentIndex = (currentIndex + 1) % reviews.length;
+            showReview(currentIndex);
+        }
+
+        function prevReview() {
+            currentIndex = (currentIndex - 1 + reviews.length) % reviews.length;
+            showReview(currentIndex);
+        }
+
+        // Auto Slide
+        setInterval(nextReview, 4000); // Change review every 4 seconds
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Show the welcome modal when the page loads
+        document.addEventListener('DOMContentLoaded', function () {
+            const welcomeModal = new bootstrap.Modal(document.getElementById('welcomeModal'));
+            welcomeModal.show();
+        });
+    </script>
+    <script>
+        // JavaScript for Cart Functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const cartPopup = document.getElementById('cartPopup');
+            const closeCart = document.querySelector('.close-cart');
+            const addToCartButtons = document.querySelectorAll('.btn-primary');
+            const cartItemsContainer = document.querySelector('.cart-items');
+            const cartIcon = document.querySelector('.cart-icon');
+            const cartCount = document.querySelector('.cart-count');
+            const totalElement = document.querySelector('.total span');
+
+            let cartItems = [];
+            let total = 0;
+
+            // Function to toggle cart popup
+            function toggleCart() {
+                cartPopup.style.display = cartPopup.style.display === 'flex' ? 'none' : 'flex';
+            }
+
+            // Open Cart Popup when cart icon is clicked
+            cartIcon.addEventListener('click', toggleCart);
+
+            // Close Cart Popup
+            closeCart.addEventListener('click', toggleCart);
+
+            // Close Cart Popup when clicking outside
+            window.addEventListener('click', function (event) {
+                if (event.target === cartPopup) {
+                    toggleCart();
+                }
+            });
+
+            // Add to Cart Functionality
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const productCard = button.closest('.product-card');
+                    const productName = productCard.querySelector('.card-title').innerText;
+                    const productPrice = parseFloat(productCard.querySelector('.price').innerText.replace('Rs. ', ''));
+
+                    // Add item to cart
+                    cartItems.push({ name: productName, price: productPrice });
+                    total += productPrice;
+
+                    // Update cart items in the popup
+                    const cartItem = document.createElement('div');
+                    cartItem.classList.add('cart-item');
+                    cartItem.innerHTML = `
+                <p><strong>${productName}</strong> - Rs. ${productPrice.toFixed(2)}</p>
+            `;
+                    cartItemsContainer.appendChild(cartItem);
+
+                    // Update cart count
+                    cartCount.textContent = cartItems.length;
+
+                    // Update total price
+                    totalElement.textContent = total.toFixed(2);
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>
