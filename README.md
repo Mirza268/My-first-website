@@ -12,7 +12,7 @@ Payment Gateway: JazzCash, Easypaisa
 
 🔥 How to Run the Project Locally? 1️⃣ Clone the repository:
 
-bash Copy Edit git clone https://github.com/Mirza268/New-Fragrance-website.git 2️⃣ Navigate to the project folder:
+bash Copy Edit git clone https://github.com/Mirza268/My-First-website.git 2️⃣ Navigate to the project folder:
 
 bash Copy Edit cd New-Fragrance-website 3️⃣ Install dependencies:
 
